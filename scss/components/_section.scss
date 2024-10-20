@@ -1,0 +1,117 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.hero {
+  margin-top: 10rem;
+
+  &__flex {
+    padding: 0 20px;
+    @include flex;
+    position: relative;
+    @include md {
+      flex-direction: column;
+    }
+    &-icon {
+      position: absolute;
+      top: 200px;
+      right: -20px;
+      @include md {
+        top: 90px;
+        width: 50px;
+        right: -8px;
+      }
+    }
+    &-box-text {
+      background-color: $color-light;
+      width: 200px;
+      text-align: center;
+      padding: 10px;
+      border-radius: 20px;
+      position: absolute;
+      bottom: 5%;
+      right: 20%;
+      p {
+        margin: 0;
+      }
+
+      @include md {
+        bottom: 52%;
+        right: 55%;
+        padding: 5px;
+      }
+      @include sc {
+        bottom: 73%;
+        right: 65%;
+        width: 128px;
+        p {
+          font-size: 12px !important;
+        }
+      }
+      .p-2 {
+        color: #9b948e;
+      }
+    }
+  }
+  &__box-img {
+    img {
+      @include img;
+      display: block;
+      border-radius: 50%;
+
+      @include md {
+        height: auto;
+      }
+    }
+  }
+  &__content {
+    @include md {
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3.3rem;
+      text-shadow: 2px 2px 2px #242424;
+      line-height: 1.5;
+      margin-bottom: 12px;
+      color: $color-primary;
+      @include lg {
+        font-size: 2.3rem;
+      }
+    }
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      @include md {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+/*press**/
+
+.container-press {
+  padding: 5rem 5rem 0 5rem;
+}
+
+.press {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include md {
+    flex-direction: column;
+  }
+  &__logo {
+    width: 150% !important;
+    margin: 20px 20px 50px;
+
+    @include md {
+      width: 60%;
+    }
+  }
+}

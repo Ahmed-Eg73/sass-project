@@ -1,0 +1,40 @@
+/*signin-button********************/
+.signin-button {
+  &,
+  &:link,
+  &:visited {
+    background-color: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-primary;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid $color-primary;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s background-color;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $color-green;
+  }
+}
+
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+.btn-green {
+  background-color: $color-green;
+  padding: 12px 20px;
+  border: none;
+}
+
+.btn-green:link,
+.btn-green:hover {
+  background-color: transparent;
+  border: 1px solid $color-dark-green;
+  background-color: $color-light;
+}
