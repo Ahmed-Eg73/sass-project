@@ -4,8 +4,266 @@ MONGODB_URI=mongodb+srv://netcom4001:sambo123@cluster0.9sa3p.mongodb.net/city-ev
 
 JWT_SECRET=Gq9&4jH@h!mZ^8T$x%qW
 
+--------------------------
+Backend Installation
+create folder in backend root uploads
+-------------------- 
+npm init -y
 
 
+npm install express mongoose cors dotenv bcryptjs jsonwebtoken
+
+{express: For creating the server.
+mongoose: For interacting with MongoDB.
+cors: To allow cross-origin requests.
+dotenv: To manage environment variables.
+bcryptjs: For hashing passwords.
+jsonwebtoken: For authentication (JWT).}
+
+npm install multer
+
+for images.
+
+------------------------
+
+Frontend installation 
+
+-------------------
+npm create vite@latest
+
+Install React Router:
+----
+npm install react-router-dom
+----
+npm install
+
+npm run dev 
+
+sass
+---
+npm install sass
+
+bootstrap
+
+npm install bootstrap
+
+npm install bootstrap @popperjs/core 
+
+{ ** import 'bootstrap/dist/css/bootstrap.min.css';}
+
+Install Axios for frontend:
+
+Axios is a promise-based HTTP client for making API requests for frontend:. It's useful for communicating with your backend API:
+
+npm install axios
+
+npm install prop-types
+
+---------------------------
+delete file after install react 
+
+assets/ delete -- react.svg
+
+src/ delete -- App.css &  src/ delete -- index.css
+
+Open App.jsx and remove any references to the deleted files (App.css, vite.svg).
+
+index.html: Clean up any unnecessary comments or content.
+
+main.jsx correctly imports and renders the App component.
+
+-------------------
+----- 
+Frontend/
+├── node_modules/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── .gitignore
+├── package.json
+├── README.md
+└── ...
+------------- 
+------------------ 
+for backend package.json 
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+
+to work backend in terminal 
+nodemon server.js
+
+-----------------------------
+
+for creating admin user with admin role 
+
+Select your cluster 
+choice your project database 
+users 
+Insert Document
+
+{
+  username: "admin",
+  email: "admin@example.com",
+  password: "hashedPassword",
+  role: "admin"  // This distinguishes the admin from regular users
+}
+
+for hashpassword 
+https://bcrypt-generator.com/
+---------------
+
+
+if will be list todo 
+
+Changes Needed:
+Frontend Changes:
+
+Change titles/headings from "City Events" to "Todo List"
+Remove price fields
+Modify form fields to be more todo-oriented (e.g., task name, due date, priority, category)
+Simplify the UI to be more task-focused
+Backend Changes:
+
+Modify the Event model to become a Task model
+Remove price-related fields
+Add todo-specific fields (like completion status, priority, due date)
+Features to Keep:
+
+User authentication (login/register)
+Categories
+Image uploads (could be for task attachments)
+Comments on tasks
+Admin dashboard for task management
+Additional Todo-Specific Features Could Include:
+
+Task completion status
+Priority levels
+Due dates
+Task sorting and filtering
+Task categories/tags
+-------------
+
+For Ads 
+
+
+Current Features That Work Well for Ads:
+User Authentication: Users can register/login to post their ads
+Image Upload: For ad photos
+Categories: For different types of ads
+Price Field: Already implemented, perfect for ads
+Admin Approval: Good for monitoring ad content
+Comments: Allow potential buyers to ask questions
+CRUD Operations: Create, Read, Update, Delete ads
+Minimal Changes Needed:
+Title Changes:
+
+"City Events" → "Marketplace" or "Classified Ads"
+"Events" → "Ads" or "Listings"
+"Event Details" → "Ad Details"
+Field Label Changes:
+
+"Event Name" → "Ad Title"
+"Event Time" → "Posted Date" or "Available Until"
+"Event Location" → "Location" (can keep as is)
+The basic structure and functionality would remain largely the same, making it a relatively straightforward conversion!
+
+---------------------------
+
+git hub
+---- 
+vscode 
+----------
+1- open VS Code and open your project folder (the main folder that contains both frontend and backend folders)
+
+git init
+----
+
+2- Look at your GitHub page and copy the repository URL (it should look like https://github.com/yourusername/your-repo-name.git)
+
+Then in VS Code terminal, type:
+
+git remote add origin paste-your-repository-URL-here
+
+WITHOUT the square brackets [ ]. The square brackets were causing the error.
+
+-------------------
+
+3- add your files to Git. In VS Code terminal, type:
+
+git add .
+
+(Note: The period "." after "add" means "add all files")
+
+-----------------------------------------
+4- let's commit your files with a message. In VS Code terminal, type:
+
+git commit -m "Initial commit: City Events App"
+
+------------------------------
+5- push your code to GitHub. In VS Code terminal, type:
+--
+git push -u origin main
+or if that doesn't work, try:
+
+git push -u origin master
+
+-- both error so 
+
+let's check which branch you're on. Type:
+git branch
+Then, let's verify your remote URL. Type:
+git remote -v
+
+if error use 
+git remote remove origin
+and start again.
+
+
+again all 
+----- 
+On GitHub Website:
+
+Created new repository
+Added description
+Chose public repository
+Didn't add README, .gitignore, or license (because you already had them)
+In VS Code Terminal:
+
+git init
+----------
+Added Remote Repository (without square brackets!):
+
+git remote add origin https://github.com/yourusername/your-repo-name.git
+---------
+Added Files:
+
+git add .
+--------------
+Committed Files:
+
+git commit -m "Initial commit: City Events App"
+---------------------
+Pushed to GitHub:
+
+git push -u origin master
+-----------------
+Authentication:
+
+Authorized through browser
+Gave permission to Git Credential Manager
+After these steps, all your files appeared on your GitHub repository page.
+--------------------------
+
+
+End
 /*signin-button********************/
 .signin-button, .signin-button:link, .signin-button:visited {
   background-color: transparent;
