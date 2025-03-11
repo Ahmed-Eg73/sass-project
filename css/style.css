@@ -1,3 +1,11 @@
+PORT=5000
+MONGODB_URI=mongodb+srv://netcom4001:sambo123@cluster0.9sa3p.mongodb.net/city-events?retryWrites=true&w=majority&appName=Cluster0
+
+
+JWT_SECRET=Gq9&4jH@h!mZ^8T$x%qW
+
+
+
 /*signin-button********************/
 .signin-button, .signin-button:link, .signin-button:visited {
   background-color: transparent;
